@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexted_condition</title>
+</head>
+<body>
+    <center>
+        <h1>-><button><h2>Nexted_Condition</h2></button><-</h1>
+        <h1>
+            {% if a > b %}
+                {% if a > c %}
+                    A is greater than C&B
+                {% else %}
+                    C is greater than A
+                {% endif %}
+            {% else %}
+                {% if b > c %}
+                    B is greater than C&A
+                {% else %}
+                    C is greater than B
+                {% endif %}
+            {% endif %}
+        </h1>
+    </center>
+</body>
+</html>
